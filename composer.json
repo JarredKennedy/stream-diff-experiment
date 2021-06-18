@@ -1,0 +1,13 @@
+{
+    "name": "jarredkennedy/stream-diff-experiment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jarred Kennedy",
+            "email": "me@jarredkennedy.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
