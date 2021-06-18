@@ -7,5 +7,5 @@ The same implementation, but the sequence lengths are not known ahead of time. T
 
 ## Usage
 ```
-vendor/bin/phpunit StreamDiffTest.php
+vendor/bin/phpunit
 ```
