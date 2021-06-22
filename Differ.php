@@ -55,8 +55,6 @@ class Differ {
 		$lastModifiedLineNumber = [0, 0];
 		$readOriginal = false;
 		$readModified = false;
-		$linesAdded = 0;
-		$linesRemoved = 0;
 		while ($originalLineNumber || $modifiedLineNumber) {
 			if ($originalLineNumber && $modifiedLineNumber && $originalLineNumber[0] == $modifiedLineNumber[1]) {
 				$readOriginal = true;
@@ -91,7 +89,6 @@ class Differ {
 
 				$lastOriginalLineNumber = $originalLineNumber;
 				$originalLineNumber = array_shift($originalLines);
-				$linesRemoved++;
 			}
 
 			if ($readModified) {
@@ -118,7 +115,6 @@ class Differ {
 
 				$lastModifiedLineNumber = $modifiedLineNumber;
 				$modifiedLineNumber = array_shift($modifiedLines);
-				$linesAdded++;
 			}
 
 			$readOriginal = false;
